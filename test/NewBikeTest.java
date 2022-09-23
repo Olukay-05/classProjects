@@ -1,15 +1,14 @@
-import javaAssignments.AirCondition;
 import org.junit.jupiter.api.Test;
-import tddClass.Bike;
+import tddClass.NewBike;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BikeTest {
+public class NewBikeTest {
 
     @Test
     void turnOn() {
         //Given that
-        Bike ducati = new Bike();
+        NewBike ducati = new NewBike();
         //when
         boolean isOn = ducati.turnOn();
         //check that
@@ -20,7 +19,7 @@ public class BikeTest {
     @Test
     void turnOff() {
         //Given that
-        Bike ducati = new Bike();
+        NewBike ducati = new NewBike();
         //when
         boolean isOff = ducati.turnOff();
         //check that
@@ -31,7 +30,7 @@ public class BikeTest {
     @Test
     void DucatiAccelerate(){
         //Given that
-        Bike ducati = new Bike();
+        NewBike ducati = new NewBike();
         //when
         ducati.setSpeed(10);
         ducati.setGear(2);
@@ -42,7 +41,7 @@ public class BikeTest {
     @Test
     void DucatiDeccelerate(){
         //Given that
-        Bike ducati = new Bike();
+        NewBike ducati = new NewBike();
         //when
         ducati.setSpeed(15);
         ducati.setGear(2);
@@ -53,7 +52,7 @@ public class BikeTest {
     @Test
     void GearChange(){
         //given that
-        Bike ducati = new Bike();
+        NewBike ducati = new NewBike();
         //when
         ducati.gearChange(32);
         assertEquals(3, ducati.getGear());
